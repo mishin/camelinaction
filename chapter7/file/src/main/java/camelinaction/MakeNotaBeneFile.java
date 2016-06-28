@@ -32,7 +32,7 @@ public class MakeNotaBeneFile {
             public void configure() {
             	 from("quartz://report?cron=0/2+*+*+*+*+?")
             	 .setBody().simple("\n")
-            	 .to("file:/c:/Users/Mishin737/Documents/work_line/?fileName=${date:now:ddMMyyyy}/${date:now:ddMMyyyy}_nb.txt");
+            	 .to("file:/c:/Users/Mishin/Documents/work_line/?fileName=${date:now:ddMMyyyy}/${date:now:ddMMyyyy}_nb.txt");
             }
         });
 
